@@ -6,7 +6,7 @@ LABEL maintainer="Jona Koudijs"
 
 # Install required packages
 RUN pip install yt-dlp --no-cache-dir
-RUN apk add ffmpeg
+RUN apk add coreutils ffmpeg --no-cache
 
 # Set default container command
 ENTRYPOINT ["yt-dlp"]
