@@ -6,9 +6,7 @@ on:
 jobs:
   create-keepalive-commit:
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
     steps:
       - uses: actions/checkout@v4
       - name: Create Keepalive Commit
-        uses: gautamkrishnar/keepalive-workflow@v2
+        uses: gautamkrishnar/keepalive-workflow@master
